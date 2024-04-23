@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivQuayLai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_icon"/>
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ KÝ TÚC XÁ"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+
+        android:gravity="center_horizontal"
+        />
+    <!-- 1dp co the chua 1 hoạc nhieu pixel    -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:src="@drawable/nendangnhap"
+        android:layout_gravity="center"/>
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OTP"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+
+        android:gravity="center_horizontal"
+        />
+
+
+<!--    layout_gravity: can chinh textview ở giữa layout cha là LinearLayout-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Vui lòng nhập mã đã gửi đến "
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#66000000"
+
+        />
+<!--    gravity: căn chỉnh text của TextView nằm giữa textView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ email"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="#66000000"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="trongd2002@gmail.com"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#CC000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:weightSum="6">
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+           />
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+            />
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="1"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="20sp"
+        android:id="@+id/btXacNhan"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_blue"
+        android:text="Xác nhận"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tvChuaOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa nhận được OTP, "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/tvGuiLaiOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi lại mã"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+</LinearLayout>
